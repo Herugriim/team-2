@@ -42,3 +42,8 @@
 .nav-link.active::after {
   background: #747bff;
 }
+
+h2 {
+  font-size: 80px;
+  color: #2222ff;
+}
