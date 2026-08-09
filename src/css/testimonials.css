@@ -44,7 +44,7 @@
   background-color: #f2f2f2;
   padding: 32px;
   max-width: 335px;
-  height: 260px;
+  height: 214px;
 }
 
 .stars {
@@ -87,6 +87,7 @@
   .testimonials-item.review {
     max-width: none;
     width: 250px;
+    height: 260px;
   }
 
   .testimonials-image {
