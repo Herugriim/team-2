@@ -1,4 +1,6 @@
 .contacts {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 .container {
 }
@@ -41,6 +43,7 @@
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: -0.01em;
+  margin-bottom: 8px;
 }
 .contacts-link {
   text-decoration: none;
@@ -74,6 +77,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 8px;
 }
 .contacts-input {
   padding: 8px 12px;
