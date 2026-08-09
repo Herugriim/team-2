@@ -1,0 +1,123 @@
+.gallery {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.gallery-title {
+    font-family: "Sora", sans-serif;
+
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #000;
+
+    margin-bottom: 0 0 24px;
+}
+.gallery-description {
+    font-family: "Mulish", sans-serif;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+
+    margin-bottom: 0 0 40px;
+}
+.gallery-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.gallery-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 0;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 335px;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+
+    .gallery {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        }
+    
+    .gallery-description {
+        margin-bottom: 80px;
+        }
+    
+    .gallery-list {
+        flex-direction: row;
+        gap: 24px;
+        }
+    
+    .gallery-column {
+        width: 340px;
+        gap: 24px;
+        }
+    
+    .gallery-image {
+        width: 340px;
+        object-fit: cover;
+        }
+
+    .gallery-column:first-child .gallery-image:first-child {
+        height: 368px;
+        }
+
+    .gallery-column:first-child .gallery-image:last-child {
+        height: 226px;
+        }
+
+    .gallery-column:last-child .gallery-image:first-child {
+        height: 216px;
+        }
+
+    .gallery-column:last-child .gallery-image:last-child {
+        height: 386px;
+        }
+}
+
+@media (min-width: 1440px) {
+    .gallery {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        }
+
+    .gallery-title {
+        font-size: 48px;
+        }
+
+    .gallery-description {
+        margin-bottom: 80px;
+        }
+
+    .gallery-list {
+        gap: 32px;
+        }
+
+    .gallery-column {
+        width: 640px;
+        gap: 32px;
+        }
+
+    .gallery-image {
+        width: 640px;
+        height: auto;
+        object-fit: initial;
+        }
+}
