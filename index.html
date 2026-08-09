@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vanilla App Template</title>
   <script type="module" crossorigin src="/team-2/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/team-2/assets/index-HrAfzseD.css">
+  <link rel="stylesheet" crossorigin href="/team-2/assets/index-BcMNNE4-.css">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
             </ul>
         </nav>
 
-        <button class="header-button-order">Order Now</button>
+        <button class="header-button-order" type="button">Order Now</button>
 
         <button class="header-menu-link" type="button">
             <svg class="header-menu-icon" width="16" height="12">
@@ -49,7 +49,34 @@
     <!-- Loads the specified .html file -->
     
     
-    
+    <div class="burger-overlay is-open" id="modal">
+    <div class="burger">
+        <div class="burger-top">
+            <a class="burger-logo-link" href="">
+                <svg class="burger-logo-icon" width="160" height="68">
+                    <use href="/team-2/assets/icons-B_DTSPLQ.svg#logo"></use>
+                </svg>
+            </a>
+            <button class="burger-button-close" type="button">
+                <svg class="burger-close-icon" width="24" height="24">
+                    <use href="/team-2/assets/icons-B_DTSPLQ.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="burger-bottom">
+            <nav class="burger-nav">
+                <ul class="burger-nav-list">
+                    <li class="burger-nav-item"><a class="burger-nav-link" href="#about-us">About us</a></li>
+                    <li class="burger-nav-item"><a class="burger-nav-link" href="#benefits">Benefits</a></li>
+                    <li class="burger-nav-item"><a class="burger-nav-link" href="#gallery">Gallery</a></li>
+                    <li class="burger-nav-item"><a class="burger-nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="burger-nav-item"><a class="burger-nav-link" href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <button class="burger-button-order" type="button">Order Now</button>
+        </div>
+    </div>
+</div>
     
     
     <section class="section-testimonials" id="testimonials">
