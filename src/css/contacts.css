@@ -118,6 +118,7 @@
   line-height: 1.5;
   border: 1px solid rgba(0, 0, 0, 0.15);
   outline: none;
+  resize: none;
 }
 
 .contacts-textarea:focus {
