@@ -6,13 +6,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Sora:wght@100..800&display=swap"
     rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="/team-2/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vanilla App Template</title>
   <script type="module" crossorigin src="/team-2/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/team-2/assets/index-Dw_mZHex.css">
+  <link rel="stylesheet" crossorigin href="/team-2/assets/index-YtuNcZP3.css">
 </head>
 
 <body>
@@ -26,6 +26,93 @@
     
     
     
+    <section class="contacts" id="contacts">
+    <div class="container">
+        ` <p class="contacts-subtitle">Connect</p>
+
+        <h2 class="contacts-title">Order your unique jewelry</h2>
+
+        <p class="contacts-description">
+            We'd love to hear more details from you!
+        </p>
+        <div class="contacts-container">
+            <ul class="contacts-list">
+                <li class="contacts-item">
+                    <svg class="contacts-icon" width="32" height="32">
+                        <use href="../img/icons.svg#email"></use>
+                    </svg>
+
+                    <p class="contacts-type">Email</p>
+
+                    <a class="contacts-link" href="mailto:info@handmadejewelry.com">
+                        info@handmadejewelry.com
+                    </a>
+                </li>
+
+                <li class="contacts-item">
+                    <svg class="contacts-icon" width="32" height="32">
+                        <use href="../img/icons.svg#phone"></use>
+                    </svg>
+
+                    <p class="contacts-type">Phone</p>
+
+                    <a class="contacts-link" href="tel:+15550000000">
+                        +1 (555) 000-0000
+                    </a>
+                </li>
+
+                <li class="contacts-item">
+                    <svg class="contacts-icon" width="32" height="32">
+                        <use href="../img/icons.svg#maps"></use>
+                    </svg>
+
+                    <p class="contacts-type">Office</p>
+
+                    <a class="contacts-link"
+                        href="https://www.google.com/maps/search/?api=1&query=76-8+Oakington+Manor+Dr,+London,+UK"
+                        target="_blank" rel="noopener noreferrer">
+                        76-8 Oakington Manor Dr, London, UK
+                    </a>
+                </li>
+            </ul>
+
+            <form class="contacts-form">
+                <div class="contacts-field">
+                    <label class="contacts-label" for="contacts-name">
+                        Name*
+                    </label>
+
+                    <input class="contacts-input" id="contacts-name" type="text" name="name" placeholder="Tony"
+                        pattern="^[a-zA-Z\s\.]{5,28}$" required />
+                    <span class="contacts-error">Error text</span>
+                </div>
+
+                <div class="contacts-field">
+                    <label class="contacts-label" for="contacts-phone">
+                        Phone*
+                    </label>
+
+                    <input class="contacts-input" id="contacts-phone" type="tel" name="phone"
+                        placeholder="+1 234 123 23" pattern="^\+[0-9\s]{14}$" required />
+                    <span class="contacts-error">Error text</span>
+                </div>
+
+                <div class="contacts-field">
+                    <label class="contacts-label" for="contacts-message">
+                        Describe what you want
+                    </label>
+
+                    <textarea class="contacts-textarea" id="contacts-message" name="message"
+                        placeholder="Type your message..." maxlength="500" required></textarea>
+                </div>
+
+                <button class="contacts-button" type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
   </main>
 
   
