@@ -1,0 +1,66 @@
+.benefits {
+    padding: 64px 0;
+}
+.benf-title {
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #212121;
+    margin-bottom: 32px;
+    max-width: 870px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.benf-list {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+.benf-item {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+    gap: 24px;
+    padding: 32px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #F2F2F2;
+    width: calc((100% - 64px) / 3);
+}
+.benf-card-title {
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: #212121;
+}
+.benf-card-point {
+    color: #212121;
+}
+/* Tablet*/
+@media screen and (max-width: 1439px) {
+    .benf-title {
+        font-size: 36px;
+    }
+    .benf-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .benf-item {
+        width: 100%;
+        max-width: 768px;
+    }
+}
+
+/* Mobile*/
+@media screen and (max-width: 767px) {
+    .benefits {
+        padding: 32px 0;
+    }
+    .benf-card-point {
+    }
+}
