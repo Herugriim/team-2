@@ -5,7 +5,6 @@
 
 .gallery-title {
     font-family: "Sora", sans-serif;
-
     font-weight: 400;
     font-size: 36px;
     line-height: 1.2;
@@ -15,9 +14,9 @@
 
     margin-bottom: 24px;
 }
+
 .gallery-description {
     font-family: "Mulish", sans-serif;
-
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
@@ -26,6 +25,7 @@
 
     margin-bottom: 40px;
 }
+
 .gallery-list {
     display: flex;
     flex-direction: column;
@@ -35,6 +35,7 @@
     padding: 0;
     margin: 0;
 }
+
 .gallery-column {
     display: flex;
     flex-direction: column;
@@ -42,82 +43,107 @@
     min-width: 0;
 }
 
-.gallery-image {
+.gallery-img {
     display: block;
     width: 100%;
     height: 335px;
     object-fit: cover;
 }
 
+
+/* Tablet */
+
 @media (min-width: 768px) {
 
-    .gallery {
-        padding-top: 64px;
-        padding-bottom: 64px;
-        }
-    
     .gallery-description {
         margin-bottom: 80px;
-        }
-    
+    }
+
     .gallery-list {
         flex-direction: row;
         gap: 24px;
-        }
-    
+    }
+
     .gallery-column {
         width: 340px;
         gap: 24px;
-        }
-    
-    .gallery-image {
+    }
+
+        /* ліва колонка має гап 32 між картинками */
+    .gallery-column:first-child {
+        gap: 32px;
+    }
+
+    .gallery-img {
         width: 340px;
         object-fit: cover;
-        }
+    }
 
-    .gallery-column:first-child .gallery-image:first-child {
+    /* Картинка 1 */
+    .gallery-column:first-child .gallery-img:first-child {
         height: 368px;
-        }
+    }
 
-    .gallery-column:first-child .gallery-image:last-child {
+    /* Картинка 2 */
+    .gallery-column:first-child .gallery-img:last-child {
         height: 226px;
-        }
+    }
 
-    .gallery-column:last-child .gallery-image:first-child {
+    /* Картинка 3 */
+    .gallery-column:last-child .gallery-img:first-child {
         height: 216px;
-        }
+    }
 
-    .gallery-column:last-child .gallery-image:last-child {
+    /* Картинка 4 */
+    .gallery-column:last-child .gallery-img:last-child {
         height: 386px;
-        }
+    }
 }
 
+
+/* Desktop */
+
 @media (min-width: 1440px) {
-    .gallery {
-        padding-top: 64px;
-        padding-bottom: 64px;
-        }
 
     .gallery-title {
         font-size: 48px;
-        }
+    }
 
     .gallery-description {
         margin-bottom: 80px;
-        }
+    }
 
     .gallery-list {
         gap: 32px;
-        }
+    }
 
     .gallery-column {
         width: 640px;
         gap: 32px;
-        }
+    }
 
-    .gallery-image {
+    .gallery-img {
         width: 640px;
-        height: auto;
-        object-fit: initial;
-        }
+        object-fit: cover;
+    }
+
+    /* Картинка 1 */
+    .gallery-column:first-child .gallery-img:first-child {
+        height: 640px;
+    }
+
+    /* Картинка 2 */
+    .gallery-column:first-child .gallery-img:last-child {
+        height: 426px;
+    }
+
+    /* Картинка 3 */
+    .gallery-column:last-child .gallery-img:first-child {
+        height: 426px;
+    }
+
+    /* Картинка 4 */
+    .gallery-column:last-child .gallery-img:last-child {
+        height: 640px;
+    }
 }
