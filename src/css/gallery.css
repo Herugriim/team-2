@@ -1,0 +1,149 @@
+.gallery {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.gallery-title {
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #000;
+
+    margin-bottom: 24px;
+}
+
+.gallery-description {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+
+    margin-bottom: 40px;
+}
+
+.gallery-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 0;
+}
+
+.gallery-img {
+    display: block;
+    width: 100%;
+    height: 335px;
+    object-fit: cover;
+}
+
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+    .gallery-description {
+        margin-bottom: 80px;
+    }
+
+    .gallery-list {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .gallery-column {
+        width: 340px;
+        gap: 24px;
+    }
+
+        /* ліва колонка має гап 32 між картинками */
+    .gallery-column:first-child {
+        gap: 32px;
+    }
+
+    .gallery-img {
+        width: 340px;
+        object-fit: cover;
+    }
+
+    /* Картинка 1 */
+    .gallery-column:first-child .gallery-img:first-child {
+        height: 368px;
+    }
+
+    /* Картинка 2 */
+    .gallery-column:first-child .gallery-img:last-child {
+        height: 226px;
+    }
+
+    /* Картинка 3 */
+    .gallery-column:last-child .gallery-img:first-child {
+        height: 216px;
+    }
+
+    /* Картинка 4 */
+    .gallery-column:last-child .gallery-img:last-child {
+        height: 386px;
+    }
+}
+
+
+/* Desktop */
+
+@media (min-width: 1440px) {
+
+    .gallery-title {
+        font-size: 48px;
+    }
+
+    .gallery-description {
+        margin-bottom: 80px;
+    }
+
+    .gallery-list {
+        gap: 32px;
+    }
+
+    .gallery-column {
+        width: 640px;
+        gap: 32px;
+    }
+
+    .gallery-img {
+        width: 640px;
+        object-fit: cover;
+    }
+
+    /* Картинка 1 */
+    .gallery-column:first-child .gallery-img:first-child {
+        height: 640px;
+    }
+
+    /* Картинка 2 */
+    .gallery-column:first-child .gallery-img:last-child {
+        height: 426px;
+    }
+
+    /* Картинка 3 */
+    .gallery-column:last-child .gallery-img:first-child {
+        height: 426px;
+    }
+
+    /* Картинка 4 */
+    .gallery-column:last-child .gallery-img:last-child {
+        height: 640px;
+    }
+}
