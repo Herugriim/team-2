@@ -1,5 +1,5 @@
 .hero {
-  width: 100%;
+  width: 375px;
   height: 656px;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -62,6 +62,7 @@
 
 @media screen and (min-width: 768px) {
   .hero {
+    width: 768px;
     height: 864px;
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -87,6 +88,7 @@
 
 @media screen and (min-width: 1440px) {
   .hero {
+    width: 1440px;
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       image-set(url('../img/hero-bg.webp') 1x, url('../img/hero-bg@2x.webp') 2x);
