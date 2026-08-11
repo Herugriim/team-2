@@ -1,60 +1,72 @@
 .benefits {
-  padding: 64px 0;
+    padding: 64px 0;
+}
+.benf-title,
+.benf-card-title,
+.benf-card-point {
+    color: #212121;
+}
+.benf-title,
+.benf-card-title {
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
 }
 .benf-title {
-  font-family: 'Sora', sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 120%;
-  letter-spacing: -0.01em;
-  text-align: center;
-  color: #212121;
-  margin-bottom: 32px;
-  max-width: 870px;
-  margin-left: auto;
-  margin-right: auto;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 32px;
 }
 .benf-list {
-  display: flex;
-  gap: 32px;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
 }
 .benf-item {
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  text-align: center;
-  gap: 24px;
-  padding: 32px 12px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: #f2f2f2;
-  width: calc((100% - 64px) / 3);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+    padding: 32px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #F2F2F2;
+    width: 100%;
 }
 .benf-card-title {
-  font-family: 'Sora', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 140%;
-  letter-spacing: -0.01em;
-  color: #212121;
-}
-.benf-card-point {
-  color: #212121;
+    font-size: 20px;
+    line-height: 1.4;
 }
 
-@media screen and (max-width: 767px) {
-}
 
-@media screen and (max-width: 1439px) {
-  .benf-title {
-    font-size: 36px;
-  }
-  .benf-list {
-    flex-direction: column;
-    align-items: center;
-  }
-  .benf-item {
-    width: 100%;
-    max-width: 768px;
-  }
+@media screen and (min-width: 768px) {
+    .benf-title {
+        font-size: 36px;
+    }
+    
+    .benf-item {
+        max-width: 768px; 
+    }
+}
+@media screen and (min-width: 1440px) {
+    .benefits {
+        padding: 64px 0;
+    }
+    .benf-title {
+        font-size: 40px;
+        max-width: 870px;
+        margin: 0 auto 32px auto;
+    }
+    .benf-list {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .benf-item {
+        width: calc((100% - 64px) / 3);
+    }
+    .benf-card-title {
+        font-size: 24px;
+    }
 }
