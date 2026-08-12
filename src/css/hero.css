@@ -1,7 +1,7 @@
 .hero {
   width: 375px;
   margin: 0 auto;
-  height: 656px;
+  min-height: 656px;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     image-set(
@@ -14,7 +14,7 @@
 }
 
 .hero-container {
-  padding: 160px 20px 0 20px;
+  padding: 160px 20px 160px 20px;
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
@@ -67,7 +67,7 @@
 @media screen and (min-width: 768px) {
   .hero {
     width: 768px;
-    height: 864px;
+    min-height: 864px;
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       image-set(
@@ -76,7 +76,7 @@
       );
   }
   .hero-container {
-    padding: 160px 96px 0 32px;
+    padding: 160px 96px 160px 32px;
   }
 
   .hero-title {
@@ -93,12 +93,15 @@
 @media screen and (min-width: 1440px) {
   .hero {
     width: 1440px;
+    min-height: 864px;
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       image-set(url('../img/hero-bg.webp') 1x, url('../img/hero-bg@2x.webp') 2x);
   }
-
-  .hero-title {
+  .hero-container {
+    padding: 224px 64px;
+  }
+  .hero .hero-title {
     max-width: 640px;
     font-size: 56px;
   }

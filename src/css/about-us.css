@@ -72,6 +72,7 @@
   .about-us-img {
     width: 640px;
     height: 456px;
+    margin-bottom: 0;
   }
   .about-us-title {
     font-size: 48px;
